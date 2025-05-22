@@ -1,0 +1,120 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f6f9fc, #e9f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+.form {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 17px;
+  font-size: 1rem;
+  margin: 10px;
+  color: black;
+  border: 2px solid #dcdfe6;
+  border-radius: 12px;
+  background: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.input:focus + span,
+.input:not(:placeholder-shown) + span {
+  top: -1.5rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background: white;
+  padding: 0 0.3rem;
+  color: #007bff;
+}
+
+label span {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background: transparent;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+.signin {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+  color: #666;
+}
+
+.signin a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signin a:hover {
+  text-decoration: underline;
+}

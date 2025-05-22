@@ -1,0 +1,45 @@
+.input-wrapper {
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1.5px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-top-width: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.floating-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 6px 0;
+  color: #333;
+  background: transparent;
+}
+
+.floating-label {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  font-size: 16px;
+  color: #aaa;
+  background-color: #fff;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  z-index: 10;
+}
+
+.floating-input:focus + .floating-label,
+.floating-label.float {
+  top: -10px;
+  font-size: 12px;
+  color: #4a90e2;
+}
