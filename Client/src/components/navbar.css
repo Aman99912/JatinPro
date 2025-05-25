@@ -1,0 +1,76 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 60px;
+  z-index: 999;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 36, 36, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  background: #fff3;
+}
+
+.outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rect {
+  stroke-dashoffset: 5;
+  stroke-dasharray: 0 0 10 40 10 40;
+  stroke: #fff;
+  transition: 0.5s;
+}
+
+.container:hover .outline .rect {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 0;
+  transition: 999999s;
+}
+
+/* Hover Effects for Each Button */
+.btn:nth-of-type(2):hover ~ svg .rect {
+  stroke-dasharray: 0 2 8 73.3 8 10.7;
+}
+.btn:nth-of-type(3):hover ~ svg .rect {
+  stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+}
+.btn:nth-of-type(4):hover ~ svg .rect {
+  stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+}
+.btn:nth-of-type(5):hover ~ svg .rect {
+  stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+}
+.btn:nth-of-type(6):hover ~ svg .rect {
+  stroke-dasharray: 0 44.7 6.9 10.2 6.9 76;
+}

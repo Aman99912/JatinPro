@@ -15,6 +15,60 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Home.css */
+
+.homeContainer {
+  background-image: url('https://th.bing.com/th/id/OIP.twDw1sXK9O2QQzPZoHEg3gHaEK?rs=1&pid=ImgDetMain');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 80px;
+  color: black;
+}
+
+.heroSection {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.servicesContainer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.servicesContainer h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.servicesGrid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 .home-card h1 {
   margin-bottom: 1rem;
   color: #4b0082;
@@ -39,4 +93,68 @@
 
 .logout-btn:hover {
   background: #e63946;
+}
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerSection h3,
+.footerSection h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin: 8px 0;
+}
+
+.footerSection ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footerSection ul li a:hover {
+  color: #fff;
+}
+
+.socialIcons a {
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  color: #fff;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 10px;
 }
